@@ -77,11 +77,13 @@ nav a:hover{
 
 #sobre-mim,
 #conhecimento,
-#projetos,
-#contato {
+#projetos{ 
   scroll-margin-top: 120px;
 }
 
+#contato{ 
+  scroll-margin-top: 100px;
+ }
 .desenvolvedor{
     margin-bottom: 20px;
     font-size: 30px;
