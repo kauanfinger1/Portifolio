@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "m-plus-1p", sans-serif;
+    font-style: normal;
+    padding-top: 80px; 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* mantém o fundo do header */
+    z-index: 999; /* evita que outros elementos passem por cima */
+    padding: 10px 0; /* opcional, só pra dar um espaçamento */
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: black;
+} 
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #00BBFF;
+    transition: 0.3s;
+}
+
+.tag{
+    margin-left: 10%;
+    color: #00BBFF;
+}
+
+.tag h3:hover{
+    color: #FFFFFF;
+    transition: 0.3s;
+    cursor:default;
+}
+
+.menu-links {
+    display: flex;
+    gap: 50px;
+    margin-left: 14%;
+}
+
+.contato-trecho-nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.btn-contato{
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 0 40px;
+    border: 2px solid white;
+}
+
+.btn-contato:hover{
+    background-color: rgb(31, 30, 30);
+    border: 2px solid #00BBFF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#sobre-mim,
+#conhecimento,
+#projetos,
+#contato {
+  scroll-margin-top: 120px;
+}
+
+.desenvolvedor{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.azul{
+    color: #0027EA;
+}
+
+.sobre-mim{
+    background-color: RGB(20, 4, 255,0.1);
+    border-radius: 20px;
+    border: 2px solid #424242;
+}
+.sobre-mim h2{
+    text-align: start;
+    margin-left: 20px;
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+.texto-sobre-mim{
+    justify-content: start;
+    font-size: 18px;
+}
+
+.texto-sobre-mim h2{
+    text-align: initial;
+}
+.imagem-perfil{
+    justify-content: end;
+    border-radius: 100%;
+}
+
+.sobre-mim-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 50px;
+}
+
+.conhecimento{
+    font-size: 30px;
+}
+
+.container-conhecimentos{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.projetos{
+    font-size: 30px;
+}
+
+.container-projetos{
+    background-color: rgba(0, 187, 255, 0.2);
+    border-radius: 20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-projeto{
+    background-color: #00BBFF;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    min-width: 20%;
+    height: 15%;
+    margin-bottom: 20px;
+}
+
+.btn-projeto:hover{
+    background-color: #04546e;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container-projetos p{
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.container-projetos h3{
+    padding: 20px;
+}
+
+.contato{
+    font-size: 30px;
+}
+
+.github{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 15%;
+    align-items: center;
+}
+
+.github h3{
+    font-size: 25px;
+}
+
+.github img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.instagram{    
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 15%;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.instagram h3{
+    font-size: 25px;
+}
+
+.instagram img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.gmail{    
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 15%;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.gmail h3{
+    font-size: 25px;
+}
+
+.gmail img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.linkedin{    
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 15%;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.linkedin h3{
+    font-size: 25px;
+}
+
+.linkedin img{
+    max-width: 100px;
+    max-height: 100px;
+}
