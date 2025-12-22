@@ -90,3 +90,22 @@ fetch(urlProjetos)
     });
   })
   .catch(err => console.error("Erro ao carregar projetos do Sanity:", err));
+
+
+  function toggleMenu() {
+    document.querySelector("nav").classList.toggle("ativo");
+}
+
+function toggleMenu() {
+    const icone = document.getElementById("icone");
+    const nav = document.querySelector("nav");
+
+    icone.classList.toggle("ativo");
+    nav.classList.toggle("ativo");
+
+    if (icone.textContent.trim() === "density_medium") {
+        icone.textContent = "close";
+    } else {
+        icone.textContent = "density_medium";
+    }
+}

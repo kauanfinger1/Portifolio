@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@media screen and (max-width: 850px) {
+
+    /* Topo mobile */
+    .topo-mobile {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding: 10px 20px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+    }
+
+    /* Ícone hambúrguer */
+    #icone {
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+        
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    #icone.ativo {
+    transform: rotate(180deg);
+    }
+
+    /* Menu */
+    nav {
+        position: fixed;
+        top: 70px; /* abaixo do topo */
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 30px 0;
+        gap: 25px;
+        z-index: 999;
+    }
+
+    nav.ativo {
+        display: flex;
+    }
+
+    .logo-mobile {
+        font-size: 24px;
+        color: #00BBFF;
+    }
+
+    .tag{
+        display: none;
+    }
+
+    .logo-mobile:hover {
+        color: #FFFFFF;
+        transition: 0.3s;
+        cursor: default;
+    }
+
+    /* Links */
+    .menu-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Esconder botão contato separado se quiser */
+    .contato-trecho-nav {
+        margin-top: 15px;
+    }
+
+    .sobre-mim-conteudo {
+        flex-direction: column;
+        align-items: center;   /* CENTRALIZA TUDO */
+        text-align: center;
+        gap: 20px;
+    }
+
+.imagem-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+    .texto-sobre-mim {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    
+    .container-projetos img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+    .container-conhecimentos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gmail {
+        padding-left: 0;
+    }
+
+    .instagram {
+        padding-left: 0;
+    }
+
+    .github {
+        padding-left: 0;
+    }
+
+    .linkedin {
+        padding-left: 0;
+    }
+}

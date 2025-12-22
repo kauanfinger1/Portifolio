@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background-color: black;
     color: white;
@@ -21,12 +26,18 @@ header{
     padding: 10px 0; /* opcional, só pra dar um espaçamento */
 }
 
-nav{
+nav {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 50px;
     background-color: black;
-} 
+}
+
+.topo-mobile,
+#icone {
+    display: none;
+}
 
 nav a{
     color: white;
@@ -115,7 +126,6 @@ nav a:hover{
     text-align: initial;
 }
 .imagem-perfil{
-    justify-content: end;
     border-radius: 100%;
 }
 
@@ -133,10 +143,8 @@ nav a:hover{
 
 .container-conhecimentos{
     display: flex;
-    flex-direction: row;
     gap: 50px;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 .projetos{
@@ -201,8 +209,8 @@ nav a:hover{
 }
 
 .github img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .instagram{    
@@ -219,8 +227,8 @@ nav a:hover{
 }
 
 .instagram img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .gmail{    
@@ -234,11 +242,13 @@ nav a:hover{
 
 .gmail h3{
     font-size: 25px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .gmail img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .linkedin{    
@@ -255,6 +265,6 @@ nav a:hover{
 }
 
 .linkedin img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
 }
